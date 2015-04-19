@@ -70,36 +70,26 @@
 
             <div class="panel panel-default">
               <div class="panel-heading">
-                 <a class="panel-title" data-toggle="collapse" data-parent="#panel-872098" href="#panel-element-702210">Overview</a>
-              </div>
-              <div id="panel-element-702210" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-heading">
                  <a class="panel-title" data-toggle="collapse" data-parent="#panel-872098" href="#panel-element-716853">Get Feed</a>
               </div>
               <div id="panel-element-716853" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <p>request feed: crimenut.maxwellbuck.com/reports/feed
-                    requires:  <ol><li>json with valid token*,</li> <li>lon*,</li> lat*, <li>page,</li> <li>miles<li>
-                    returns: list of reports as a json (see ex 5) or error message.</ol></p>
+                    <h2>request feed:</h2> <p><b>Endpoint:</b> crimenut.maxwellbuck.com/reports/feed 
+                    <br>requires:  
+                    <ul>
+                      <li><b>json with valid token*</b></li> 
+                      <li><b>lon*</b></li> 
+                      <li><b>lat*</b></li> 
+                      <li>page</li> 
+                      <li>miles</li>
+                    </ul>
+                    <i>returns:</i> list of reports as a json (see ex 5) or error message.</p>
 
-                    <p>page: this is for pagination.  pages are up to 20 reports in length.  The first page fetched is “page”:1 (1 is default if page not supplied). If there are next and/or previous pages the response will include a key called next_page and/or prev_page.  Suggested use is that when the user is halfway down the page or so the next page is loaded by calling feed on next_page.  If the user scrolls for a long time and then scrolls back up, calling feed on prev_page might be intelligent.</p>
+                    <p><i>page:</i> this is for pagination.  pages are up to 20 reports in length.  The first page fetched is “page”:1 (1 is default if page not supplied). If there are next and/or previous pages the response will include a key called next_page and/or prev_page.  Suggested use is that when the user is halfway down the page or so the next page is loaded by calling feed on next_page.  If the user scrolls for a long time and then scrolls back up, calling feed on prev_page might be intelligent.</p>
 
-                    <p>miles: this value determines how many miles away from lon and lat that reports will be shown.  for example, “miles”:”25” would show reports up to 25 miles away in the feed.  Default is 10.</p>
+                    <p><i>miles:</i> this value determines how many miles away from lon and lat that reports will be shown.  for example, “miles”:”25” would show reports up to 25 miles away in the feed.  Default is 10.</p>
 
-
-
-
-
-
-                    ---------------------------------------------------------------------------------------------------------------------------
-                    *api required fields.  Restrictions on client side could be stricter.  Perhaps require time_began and time_ended
+                    <p>*api required fields.  Restrictions on client side could be stricter.  Perhaps require time_began and time_ended</p>
 
 
 
@@ -108,16 +98,37 @@
             </div>
           </div>
 
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								 <a class="panel-title" data-toggle="collapse" data-parent="#panel-872098" href="#panel-element-716853">Data</a>
-							</div>
-							<div id="panel-element-716853" class="panel-collapse collapse">
-								<div class="panel-body">
-									Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-								</div>
-							</div>
-						</div>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                 <a class="panel-title" data-toggle="collapse" data-parent="#panel-872098" href="#panel-element-716853">Get Individual rep</a>
+              </div>
+              <div id="panel-element-716853" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h2>request feed:</h2> <p><b>Endpoint:</b> crimenut.maxwellbuck.com/reports/report
+                    <br>requires:  
+                    <ul>
+                      <li><b>json with valid token*</b></li> 
+                      <li><b>lon*</b></li> 
+                      <li><b>lat*</b></li> 
+                      <li>page</li> 
+                      <li>miles</li>
+                    </ul>
+                    <i>returns:</i> list of reports as a json (see ex 5) or error message.</p>
+
+                    <p><i>page:</i> this is for pagination.  pages are up to 20 reports in length.  The first page fetched is “page”:1 (1 is default if page not supplied). If there are next and/or previous pages the response will include a key called next_page and/or prev_page.  Suggested use is that when the user is halfway down the page or so the next page is loaded by calling feed on next_page.  If the user scrolls for a long time and then scrolls back up, calling feed on prev_page might be intelligent.</p>
+
+                    <p><i>miles:</i> this value determines how many miles away from lon and lat that reports will be shown.  for example, “miles”:”25” would show reports up to 25 miles away in the feed.  Default is 10.</p>
+
+                    <p>*api required fields.  Restrictions on client side could be stricter.  Perhaps require time_began and time_ended</p>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+						
 					</div>
 				</div>
 			</div>
